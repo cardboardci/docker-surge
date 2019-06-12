@@ -1,0 +1,8 @@
+---
+name: github
+provider: github.com
+repository: docker-surge
+url: https://github.com/cardboardci/docker-surge
+clone:
+  ssh: git@github.com:cardboardci/docker-surge.git
+  https: https://github.com/cardboardci/docker-surge.git

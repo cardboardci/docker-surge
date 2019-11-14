@@ -9,7 +9,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN npm install -g stylelint stylelint-config-standard
+COPY provision/nodelist /cardboardci/nodelist
+RUN xargs -a /cardboardci/nodelist npm install -g
 
 USER cardboardci
 
